@@ -1,0 +1,18 @@
+{
+  "name": "openlayers-legacy",
+  "version": "6.5.0",
+  "description": "openlayers legacy build for geoext",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf build && cd node_modules/ol/ && npm i && npm run build-legacy && cp -r build/legacy ../../build && cp LICENSE.md ../../build/"
+  },
+  "keywords": [
+    "geoext",
+    "openlayers"
+  ],
+  "author": "Simon Seyock <seyock@terrestris.de>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "ol": "git+https://github.com/openlayers/openlayers.git#v6.5.0"
+  }
+}

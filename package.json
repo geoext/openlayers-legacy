@@ -13,6 +13,7 @@
   "author": "Simon Seyock <seyock@terrestris.de>",
   "license": "BSD-2-Clause",
   "dependencies": {
+    "np": "^7.4.0",
     "ol": "git+https://github.com/openlayers/openlayers.git#v6.5.0"
   }
 }

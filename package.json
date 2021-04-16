@@ -1,6 +1,6 @@
 {
   "name": "@geoext/openlayers-legacy",
-  "version": "6.5.1",
+  "version": "6.5.2",
   "description": "OpenLayers legacy build for geoext",
   "scripts": {
     "build": "rm -rf dist && cd node_modules/ol/ && npm i && npm run build-legacy && cp -r build/legacy ../../dist && cp LICENSE.md ../../dist/ && cd ../../",

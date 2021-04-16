@@ -1,10 +1,10 @@
 {
-  "name": "openlayers-legacy",
-  "version": "6.5.0",
+  "name": "@geoext/openlayers-legacy",
+  "version": "6.5.0-pre.0",
   "description": "openlayers legacy build for geoext",
-  "main": "index.js",
   "scripts": {
-    "build": "rm -rf build && cd node_modules/ol/ && npm i && npm run build-legacy && cp -r build/legacy ../../build && cp LICENSE.md ../../build/"
+    "build": "rm -rf build && cd node_modules/ol/ && npm i && npm run build-legacy && cp -r build/legacy ../../build && cp LICENSE.md ../../build/",
+    "release": "np 6.5.0-pre.0 --contents=build --no-yarn --tag=next"
   },
   "keywords": [
     "geoext",
@@ -15,5 +15,9 @@
   "dependencies": {
     "np": "^7.4.0",
     "ol": "git+https://github.com/openlayers/openlayers.git#v6.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:geoext/openlayers-legacy.git"
   }
 }

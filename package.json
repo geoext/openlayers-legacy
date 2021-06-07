@@ -4,7 +4,7 @@
   "description": "OpenLayers legacy build for geoext",
   "scripts": {
     "build": "./build-openlayers-legacy.sh",
-    "release": "npm run build && np --no-yarn"
+    "release": "npm run build && np --no-yarn --no-tests --no-release-draft"
   },
   "keywords": [
     "geoext",

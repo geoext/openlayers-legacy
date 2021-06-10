@@ -21,10 +21,7 @@ npm run build-index
 
 # build debug version
 $npx webpack --config config/webpack-config-legacy-build.js --mode=development
-cd build/legacy
-cp ol.js ol-debug.js
-cp ol.js.map ol-debug.js.map
-cd ../../
+cp build/legacy/ol.js build/legacy/ol-debug.js
 
 # build production version
 $npx webpack --config config/webpack-config-legacy-build.js
@@ -32,5 +29,14 @@ $npx webpack --config config/webpack-config-legacy-build.js
 # build css
 $npx cleancss --source-map src/ol/ol.css -o build/legacy/ol.css
 
+# remove .map file
+rm build/legacy/ol.map.js
+
 # copy
 cp -r build/legacy ../../dist && cp LICENSE.md ../../dist/
+
+# go back
+cd ../../
+
+# make ol.js ie 11 friendly
+$npx babel dist/ol.js -o dist/ol.js

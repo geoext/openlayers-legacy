@@ -30,7 +30,7 @@ $npx webpack --config config/webpack-config-legacy-build.js
 $npx cleancss --source-map src/ol/ol.css -o build/legacy/ol.css
 
 # remove .map file
-rm build/legacy/ol.map.js
+rm build/legacy/ol.js.map
 
 # copy
 cp -r build/legacy ../../dist && cp LICENSE.md ../../dist/

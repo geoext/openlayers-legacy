@@ -1,6 +1,6 @@
 {
   "name": "@geoext/openlayers-legacy",
-  "version": "6.15.1",
+  "version": "6.5.4",
   "description": "OpenLayers legacy build for geoext",
   "scripts": {
     "build": "./build-openlayers-legacy.sh",

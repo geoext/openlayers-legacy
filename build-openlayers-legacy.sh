@@ -20,11 +20,11 @@ npm i
 npm run build-index
 
 # build debug version
-$npx webpack --config config/webpack-config-legacy-build.js --mode=development
+$npx webpack --config config/webpack-config-legacy-build.mjs --mode=development
 cp build/legacy/ol.js build/legacy/ol-debug.js
 
 # build production version
-$npx webpack --config config/webpack-config-legacy-build.js
+$npx webpack --config config/webpack-config-legacy-build.mjs
 
 # build css
 $npx cleancss --source-map src/ol/ol.css -o build/legacy/ol.css
